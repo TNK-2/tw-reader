@@ -25,6 +25,14 @@ export class FeedService {
     return of([])
   }
 
+  add(feed: Feed): Observable<Feed> {
+    return of()
+  }
+
+  delete(feedId: number): Observable<Feed> {
+    return of()
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error);
